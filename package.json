@@ -1,0 +1,31 @@
+{
+  "name": "js-dev-env",
+  "version": "0.0.1",
+  "description": "My default development environment with good presets. Will be like my .eslintrc.json that has my best practices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "docs": "documentation build src/** -f html html -o docs",
+    "security-check": "nsp check",
+    "start": "npm-run-all --parallel security-check index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fullchee/js-dev-env.git"
+  },
+  "author": "Fullchee Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fullchee/js-dev-env/issues"
+  },
+  "homepage": "https://github.com/Fullchee/js-dev-env#readme",
+  "devDependencies": {
+    "documentation": "5.3.5",
+    "mocha": "4.1.0",
+    "mocha-generators": "^2.0.0",
+    "npm-run-all": "4.1.2",
+    "nsp": "3.1.0",
+    "nyc": "11.4.1",
+    "rewire": "3.0.2"
+  }
+}
