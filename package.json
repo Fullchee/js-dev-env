@@ -4,6 +4,7 @@
   "description": "My default development environment with good presets. Will be like my .eslintrc.json that has my best practices.",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d lib",
     "test": "nyc mocha",
     "docs": "documentation build src/** -f html html -o docs",
     "security-check": "nsp check",
@@ -20,6 +21,9 @@
   },
   "homepage": "https://github.com/Fullchee/js-dev-env#readme",
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.1",
     "documentation": "5.3.5",
     "mocha": "4.1.0",
     "mocha-generators": "^2.0.0",
