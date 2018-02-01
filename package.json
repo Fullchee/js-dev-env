@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d lib",
-    "test": "nyc mocha",
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons",
+    "test": "npm run test-deps && nyc mocha",
     "docs": "documentation build src/** -f html html -o docs",
     "check-todos": "notes",
     "security-check": "nsp check",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
+    "dependency-check": "3.0.0",
     "documentation": "5.3.5",
     "mocha": "4.1.0",
     "mocha-generators": "^2.0.0",
@@ -33,6 +35,7 @@
     "nyc": "11.4.1",
     "pre-commit": "1.2.2",
     "rewire": "3.0.2",
-    "sinon": "4.2.1"
+    "sinon": "4.2.1",
+    "tachyons": "4.9.1"
   }
 }
