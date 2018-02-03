@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -d lib",
     "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons",
-    "test": "npm run test-deps && nyc mocha",
+    "test": "npm run test-deps && standard --fix && nyc mocha",
     "docs": "documentation build src/** -f html html -o docs",
     "check-todos": "notes",
     "security-check": "nsp check",
@@ -36,6 +36,7 @@
     "pre-commit": "1.2.2",
     "rewire": "3.0.2",
     "sinon": "4.2.1",
+    "standard": "10.0.3",
     "tachyons": "4.9.1"
   }
 }

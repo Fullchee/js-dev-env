@@ -2,11 +2,10 @@
 
 This is my personal JavaScript Development Environment.
 
-## TODO
-- add babel
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
 ## What's in it?
-- `.eslintrc.json` (for linting)
+- StandardJS Linting
 - babel (transpiles)
 - documentation.js for documentation auto-generation
 - mocha and mocha-generators for unit testing
