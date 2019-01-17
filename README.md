@@ -15,3 +15,9 @@ This is my personal JavaScript Development Environment.
 - pre-commit: only allows a commit if all unit tests pass
 - rewire: used to access private functions when requiring, useful when testing
 
+Wow, this is really out of date
+Jest
+Enzyme (if using React)
+nsp is now a part of npm
+husky (can customize your pre-commit work), don't need pre-comit
+comment-lint: using with husky: criticize the quality of the commit
